@@ -1,7 +1,7 @@
 name: sermon_notes
-description: A Flutter note-taking app with Bible verse detection
+description: A Flutter app for taking and managing sermon notes with Bible verse integration and advanced features.
 publish_to: 'none'
-version: 1.0.0+1
+version: 2.0.0+2
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
@@ -10,25 +10,47 @@ dependencies:
   flutter:
     sdk: flutter
 
-  # State Management
+  # State Management & Architecture
   flutter_bloc: ^8.1.3
-  equatable: ^2.0.5
-
-  # Local Storage
-  sqflite: ^2.3.0
-  path: ^1.8.3
-
-  # Networking
-  http: ^1.1.0
-
-  # Reactive Programming
   rxdart: ^0.27.7
+  equatable: ^2.0.5
+  dartz: ^0.10.0
 
   # Dependency Injection
   get_it: ^7.6.4
 
-  # UI
+  # Database
+  sqflite: ^2.3.0
+  path: ^1.8.3
+  path_provider: ^2.1.1
+
+  # Networking
+  http: ^1.1.0
+
+  # Utilities
+  uuid: ^4.2.1
+  intl: ^0.19.0
   cupertino_icons: ^1.0.6
+
+  # Export & Sharing (Feature 2)
+  pdf: ^3.10.0
+  printing: ^5.10.0
+  share_plus: ^7.2.0
+
+  # Audio Recording & Playback (Feature 6)
+  record: ^5.0.0
+  just_audio: ^0.9.0
+
+  # Rich Text Editing (Feature 5)
+  flutter_quill: ^8.6.0
+
+  # Handwriting & Drawing (Feature 10)
+  perfect_freehand: ^1.0.0
+
+  # Firebase for Cloud Sync (Feature 3 - optional, uncomment when ready)
+  # firebase_core: ^2.24.0
+  # cloud_firestore: ^4.13.0
+  # firebase_storage: ^11.5.0
 
 dev_dependencies:
   flutter_test:
